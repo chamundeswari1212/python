@@ -1,0 +1,5 @@
+t=int(input())
+years=(t//365)
+months=((t-years*365)//30)
+days=((t-years*365)-months*30)
+print(days,months,years,sep="/")
