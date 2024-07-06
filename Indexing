@@ -1,0 +1,15 @@
+n=int(input())
+numTuple = tuple(map(int, input().split()))
+
+index1 = numTuple.index(int(input()))
+
+index2 = numTuple.index(int(input()))
+
+index3 =numTuple.index(int(input()))
+
+index4 =numTuple.index(int(input()))
+print(numTuple)
+print(index1)
+print(index2)
+print(index3)
+print(index4)
