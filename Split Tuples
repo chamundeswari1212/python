@@ -1,0 +1,12 @@
+def split_tuples(input_tuple, sub_tuple_length):
+    sub_tuples = [input_tuple[i:i+sub_tuple_length] for i in range(0, len(input_tuple), sub_tuple_length)]
+    return tuple(tuple(map(str, sub)) for sub in sub_tuples)
+
+# Taking input from the user
+input_numbers = input().split()
+input_tuple = tuple(map(int, input_numbers))
+sub_tuple_length = int(input())
+
+# Splitting tuples
+result = split_tuples(input_tuple, sub_tuple_length)
+print(result)
