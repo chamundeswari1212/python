@@ -1,0 +1,13 @@
+n = int(input())
+numTuple = tuple(map(int, input().split()[:n]))
+a, b = list(map(int, input().split()))
+c = int(input())
+d = int(input())
+slice1 = numTuple[a:b]
+print(*slice1)
+slice2 = numTuple[c:]
+print(*slice2)
+slice3 = numTuple[:d]
+print(*slice3)
+slice4 = numTuple[:]
+print(*slice4)
