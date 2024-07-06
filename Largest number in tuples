@@ -1,0 +1,4 @@
+input_str=input("")
+num_tuple=tuple(map(int,input_str.split(',')))
+largest_item=max(num_tuple)
+print(largest_item)
